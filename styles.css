@@ -117,3 +117,21 @@ h1 {
 .show-sidebar {
     opacity: 1;
 }
+
+.close-btn {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 25px;
+    transition: transform 0.2s ease-out;
+    color: #054138;
+    cursor: pointer;
+
+}
+
+.close-btn:hover {
+    transform: rotate(0.5turn);
+}
+
+.close-btn:focus {
+    outline: none;
+}
