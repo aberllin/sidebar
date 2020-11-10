@@ -10,7 +10,6 @@
 
 body {
     background: black;
-    color: white;
 }
 
 .sidebar-toggle {
@@ -23,6 +22,7 @@ body {
     cursor: pointer;
     animation: bounce 2s ease-in-out infinite;
     transition: ease 0.5s;
+    color: white;
 } 
 
 @keyframes bounce {
@@ -54,9 +54,66 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 38px;
+    color: white;
+}
+
 .sidebar-header {
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+
+.links a {
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 26px;
+    transition: all ease 0.5s;
+}
+
+.links a:hover {
+    color: #109783;
+    padding-left: 1.75rem;
+    background: #054138;
+}
+
+.social-icons {
+    display: flex;
+    padding: 2rem 1.5rem;
+    justify-content: center;
+}
+
+.social-icons a { 
+    color: white;
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.social-icons li {
+    transition: transform 0.5s ease-out;
+
+}
+
+.social-icons li:hover {
+    transform: rotate(0.5turn);
+}
+
+.sidebar {
+    background: #1CCBB1;
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    transition: all ease 0.5s;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.show-sidebar {
+    opacity: 1;
 }
